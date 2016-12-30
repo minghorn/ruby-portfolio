@@ -1,4 +1,4 @@
-<h1>All Articles</h1>
+<%= content_for(:title, 'All Articles') %>
 <%= link_to 'New Article', new_article_path %>
 <% @articles.each do |a| %>
 	<h2><%= a.title %></h2>

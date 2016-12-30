@@ -1,4 +1,4 @@
-<h1><%= @article.title %></h1>
+<%= content_for(:title, @article.title) %>
 <p><%= @article.text %></p>
 <h2>Comments</h2>
 <%= render @article.comments %>
